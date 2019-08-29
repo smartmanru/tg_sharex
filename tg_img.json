@@ -1,0 +1,20 @@
+{
+  "Version": "13.0.0",
+  "Name": "tg img",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendPhoto",
+  "Parameters": {
+    "$chat_id": "",
+    "$photo": ""
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "chat_id": ""$chat-id"&"
+  },
+  "FileFormName": "photo",
+  "RegexList": [
+    "([0-9]+)"
+  ],
+  "URL": "https://t.me/"$channel_link"/$regex:1$"
+}

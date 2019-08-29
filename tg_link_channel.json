@@ -1,0 +1,14 @@
+
+{
+  "Version": "13.0.0",
+  "Name": "tg link",
+  "DestinationType": "URLSharingService",
+  "RequestMethod": "GET",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendMessage",
+  "Parameters": {
+    "text": "$input$ %cn",
+    "chat_id": "-1001288333015&",
+    "parse_mode": "HTML",
+    "Token": ""$api-key""
+  }
+}

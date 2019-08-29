@@ -1,0 +1,14 @@
+
+
+{
+  "Version": "13.0.0",
+  "Name": "tg",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "GET",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendMessage",
+  "Parameters": {
+    "text": "$input$ %mo:%d %h:%mi",
+    "chat_id": ""$chat-id"&",
+    "token": ""$api-key""
+  }
+}

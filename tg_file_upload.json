@@ -1,0 +1,21 @@
+{
+  "Version": "13.0.0",
+  "Name": "tg doc",
+  "DestinationType": "FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendDocument",
+  "Parameters": {
+    "$chat_id": "",
+    "$Document": ""
+  },
+  "Headers": {
+    "token": ""$api-key""
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "chat_id": ""$chat-id"&",
+    "token": ""$api-key""
+  },
+  "FileFormName": "document",
+  "URL": "Response type option is deprecated, please use \\$header:header_name\\$ syntax instead."
+}

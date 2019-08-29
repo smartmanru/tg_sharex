@@ -1,0 +1,69 @@
+{
+  "Version": "13.0.0",
+  "Name": "tg img",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendPhoto",
+  "Parameters": {
+    "$chat_id": "",
+    "$photo": ""
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "chat_id": ""$chat-id"&"
+  },
+  "FileFormName": "photo",
+  "RegexList": [
+    "([0-9]+)"
+  ],
+  "URL": "https://t.me/"$channel_link"/$regex:1$"
+}
+
+{
+  "Version": "13.0.0",
+  "Name": "tg",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "GET",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendMessage",
+  "Parameters": {
+    "text": "$input$ %mo:%d %h:%mi",
+    "chat_id": ""$chat-id"&",
+    "token": ""$api-key""
+  }
+}
+
+{
+  "Version": "13.0.0",
+  "Name": "tg link",
+  "DestinationType": "URLSharingService",
+  "RequestMethod": "GET",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendMessage",
+  "Parameters": {
+    "text": "$input$ %cn",
+    "chat_id": "-1001288333015&",
+    "parse_mode": "HTML",
+    "Token": ""$api-key""
+  }
+}
+
+{
+  "Version": "13.0.0",
+  "Name": "tg doc",
+  "DestinationType": "FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://108.61.103.32:8012/"$api-key"/sendDocument",
+  "Parameters": {
+    "$chat_id": "",
+    "$Document": ""
+  },
+  "Headers": {
+    "token": ""$api-key""
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "chat_id": ""$chat-id"&",
+    "token": ""$api-key""
+  },
+  "FileFormName": "document",
+  "URL": "Response type option is deprecated, please use \\$header:header_name\\$ syntax instead."
+}
